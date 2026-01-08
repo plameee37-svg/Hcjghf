@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สุขสันต์วันครบรอบ 4 เดือน 🐷💕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ffc1cc, #ffd6e0);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6b2b3a;
+      text-align: center;
+    }
+    .card {
+      background: #fff0f5;
+      border-radius: 25px;
+      padding: 30px 25px;
+      max-width: 360px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4 เดือน);
+      animation: pop 0.8s ease-out;
+    }
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .pig {
+      font-size: 4.5rem;
+      animation: bounce 1s infinite;
+      margin: 10px 0;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-18px); }
+    }
+    .date {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 30px;
+      background: #ff7aa2;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .hidden {
+      display: none;
+      margin-top: 4 เดือนpx;
+      font-size: 1.1rem;
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card"><h1>สุขสันต์ครบรอบ 4 เดือนนะ 🐷💖</h1>
+
+<div class="pig">🐷</div>
+
+<p>
+  ครบ 4 เดือนแล้วนะ 🐷💗<br />
+  ขอบคุณที่อยู่ข้างกันมาตลอด รักมากขึ้นทุกวัน
+</p>
+
+<button onclick="showLove()">จิ้มหมูแรง ๆ 🐽</button>
+<div id="loveText" class="hidden">
+  รักอ้วนมาก ๆ นะ 💕<br />
+  อยากอยู่กับอ้วนไปนาน ๆ
+</div>
+
+<footer>
+  จากคนที่รักอ้วนจริง ๆ 💌
+</footer>
+
+  </div>  <!-- เพลงรัก (มือถืออาจต้องกดก่อนถึงจะเล่น) -->  <audio id="music" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/4 เดือน/audio_7c3b1b7e8d.mp3" type="audio/mpeg">
+  </audio>  <script>
+    function showLove() {
+      document.getElementById('loveText').style.display = 'block';
+      document.getElementById('music').play();
+    }
+  </script></body>
+</html>
